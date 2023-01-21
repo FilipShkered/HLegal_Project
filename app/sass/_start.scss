@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.conteiner {
+    max-width: 1350px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.body {
+    font-family: 'Montserrat' , 'Arial' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    min-width: 375px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.gray-bg {
+    background-color: $gray;
+}

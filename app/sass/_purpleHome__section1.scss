@@ -1,0 +1,80 @@
+@import 'mixin';
+
+.purpleHome__section1 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__tital {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $white;
+        margin-top: 129px;
+        margin-bottom: 159px;
+    }
+
+    &__button {
+        border-radius: 50%;
+        border: 2px solid $whiteOp;
+        background-color: transparent;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        // border-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        margin-bottom: 30px;
+
+        &:hover {
+            border: 2px solid $accentOp;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            right: 13px;
+            width: 13px;
+            height: 13px;
+            transform: rotate(135deg);
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+
+        }
+
+        &:hover::before {
+            border-top: 2px solid $accent;
+            border-right: 2px solid $accent;
+
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+}
+
+
+
+@media (min-width: 904px) {
+   
+}
+
+
+@media (min-width: 992px) {
+    .purpleHome__section1 {
+
+        &__tital {
+            margin-top: 261px;
+            margin-bottom: 305px;
+        }
+
+        &__button {
+            margin-bottom: 30px;
+        }
+    }
+}

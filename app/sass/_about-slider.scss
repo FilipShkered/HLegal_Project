@@ -1,0 +1,79 @@
+.about-slider {
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+    grid-gap: 30xp;
+
+
+    &__box {
+
+        display: flex;
+
+        &__item {
+
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $white;
+            margin: 0 30px;
+            flex-shrink: 0;
+            border-radius: 12px;
+        }
+    }
+
+    &__img {
+       
+        display: flex;
+
+    }
+}
+
+.img-mini {
+    width: 125px;
+    height: 100px;
+}
+
+.about-achievements {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main;
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 768px) {
+    .about-slider {
+ 
+        &__box {
+    
+            display: flex;
+            width: 25%;
+    
+        }
+    
+        
+    }
+}
+
+@media (min-width: 904px) {
+    .about-slider {
+ 
+        &__box {
+    
+           
+            &__item {
+                
+                height: 110px;
+                
+            }
+        }
+    
+        
+    }
+}

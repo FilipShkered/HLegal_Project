@@ -1,0 +1,67 @@
+@import 'mixin';
+
+.about-section2 {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.about-section2-text {
+    font-size: 19px;
+    line-height: 30px;
+    color: $black;
+    margin: 0;
+}
+
+.about-section2-tital {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    @include gradientRed;
+    margin: 0;
+}
+
+@media (min-width: 904px) {
+
+    .about-section2 {
+        
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat (3, min-content);
+        column-gap: 60px;
+    }
+    
+    .about-section2-text {
+        grid-column: 1 / 2;
+        grid-row: span;
+        
+    }
+    
+    .about-section2-tital {
+        font-size: 38px;
+        line-height: 46px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .about-section2 {
+        max-width: 1080px;
+        margin: auto;
+        grid-template-columns: 1fr 0.6fr;
+       
+    }
+    
+    .about-section2-text {
+       
+        
+    }
+    
+    .about-section2-tital {
+     
+    }
+
+
+
+
+}

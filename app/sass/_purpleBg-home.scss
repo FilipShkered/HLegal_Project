@@ -1,0 +1,51 @@
+@import 'mixin';
+
+.purpleBg-home {
+    background: url(../img/hBg.svg) no-repeat center top,
+               linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+                     
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    background-size: 523px 600px, cover;
+    
+
+    &::after {
+        content: '';
+        height: 10px;
+        background-color: $shadow1;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &::before {
+        content: '';
+        height: 10px;
+        background-color: $shadow2;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .purpleBg-home {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 904px) {
+    .purpleBg-home {
+        background-size: 669px 768px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .purpleBg-home {
+        background-size: 797px 799px, cover;
+    }
+}

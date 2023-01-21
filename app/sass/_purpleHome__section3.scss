@@ -1,0 +1,123 @@
+@import 'mixin';
+
+.purpleHome__section3 {
+
+    padding-bottom: 60px;
+    &__services {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active-regular;
+        position: relative;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            right: -9px;
+            width: 7px;
+            height: 7px;
+            -webkit-transform: rotate(135deg);
+            transform: rotate(45deg);
+            border-top: 2px solid $active-regular;
+            border-right: 2px solid $active-regular;
+
+        }
+
+        &:hover::before {
+            border-top: 2px solid $accent;
+            border-right: 2px solid $accent;
+
+        }
+    }
+
+    &__tital {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        @include gradientRed;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        display: grid;
+        grid-gap: 30px;
+    }
+}
+
+.box__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+
+    &__img {
+        padding: 10px;
+        // background-size: 92px 92px;
+        background-color: $white;
+        border-radius: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    &__tital {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: $active-regular;
+        margin-bottom: 15px;
+        margin-right: auto;
+
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $white;
+        margin: 0;
+    }
+
+    &__marginTital {
+        margin-right: auto;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .purpleHome__section3__box {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+    
+    .purpleHome__section3__tital {
+        margin-bottom: 60px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+
+@media (min-width: 904px) {
+    .purpleHome__section3__box {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+   
+}
+
+@media (min-width: 992px) {
+
+}
